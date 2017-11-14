@@ -1,0 +1,81 @@
+@import "define";
+
+/*
+    表单样式
+*/
+.weui-cells {
+    margin-top: 0!important;
+    &:before {
+        display: none;
+    }
+    .weui-cell__ft:after {
+        border-width: 1px 1px 0 0!important;
+        margin-top: -3px!important;
+    }
+    .weui-cell {
+        padding: 0 15px;
+        height: 45px;
+        line-height: 45px;
+        font-size: @font-size-title;
+    }
+}
+/*
+    placeholder文字颜色
+*/
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #ccc; opacity:1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #cccc;opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #ccc;opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #ccc;opacity:1;
+}
+
+/*
+    toast 样式
+*/
+.weui-toast {
+    background-color: rgba(0,0,0,0.8);
+    width: inherit!important;
+    max-width: 60%!important;
+    padding: 0 8px;
+}
+.weui-toast__content {
+    font-size: @font-size-desc!important;
+}
+
+/*
+    日历选择器样式
+*/
+.dp-header {
+    background-color: #eee;
+    background-image: none!important;
+    .vux-datetime-cancel,
+    .vux-datetime-confirm {
+        color: @color-theme!important;
+    }
+}
+.dp-content {
+    .scroller-item-selected {
+        color: #000;
+    }
+    .dp-item:nth-child(1) {
+        .scroller-item {
+            text-align: right;
+        }
+    }
+    .dp-item:nth-child(3) {
+        .scroller-item {
+            text-align: left;
+        }
+    }
+}
+
+
